@@ -1,0 +1,253 @@
+@import "./color_schemes/dark";
+
+.highlight,
+.highlight .highlight {
+    background-color: $code-background-color;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+/* Modified CSS from Rouge github.dark; changed String.Escape (.se) and Name.Constant (.no) */
+.highlight table td {
+    padding: 5px;
+}
+
+.highlight table pre {
+    margin: 0;
+}
+
+.highlight,
+.highlight .w {
+    color: #c9d1d9;
+}
+
+.highlight .k,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .kv {
+    color: #ff7b72;
+}
+
+.highlight .gr {
+    color: #f0f6fc;
+}
+
+.highlight .gd {
+    color: #ffdcd7;
+    background-color: #67060c;
+}
+
+.highlight .nb {
+    color: #ffa657;
+}
+
+.highlight .nc {
+    color: #ffa657;
+}
+
+.highlight .no {
+    color: #ffa657;
+}
+
+.highlight .nn,
+.highlight .se {
+    color: #ffa657;
+}
+
+.highlight .sr {
+    color: #7ee787;
+}
+
+.highlight .na {
+    color: #7ee787;
+}
+
+.highlight .nt {
+    color: #7ee787;
+}
+
+.highlight .gi {
+    color: #aff5b4;
+    background-color: #033a16;
+}
+
+.highlight .kc {
+    color: #79c0ff;
+}
+
+.highlight .l,
+.highlight .ld,
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo,
+.highlight .mx {
+    color: #79c0ff;
+}
+
+.highlight .sb {
+    color: #79c0ff;
+}
+
+.highlight .bp {
+    color: #79c0ff;
+}
+
+.highlight .ne {
+    color: #79c0ff;
+}
+
+.highlight .nl {
+    color: #79c0ff;
+}
+
+.highlight .py {
+    color: #79c0ff;
+}
+
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .vm {
+    color: #79c0ff;
+}
+
+.highlight .o,
+.highlight .ow {
+    color: #79c0ff;
+}
+
+.highlight .gh {
+    color: #1f6feb;
+    font-weight: bold;
+}
+
+.highlight .gu {
+    color: #1f6feb;
+    font-weight: bold;
+}
+
+.highlight .s,
+.highlight .sa,
+.highlight .sc,
+.highlight .dl,
+.highlight .sd,
+.highlight .s2,
+.highlight .sh,
+.highlight .sx,
+.highlight .s1,
+.highlight .ss {
+    color: #a5d6ff;
+}
+
+.highlight .nd {
+    color: #d2a8ff;
+}
+
+.highlight .nf,
+.highlight .fm {
+    color: #d2a8ff;
+}
+
+.highlight .err {
+    color: #f0f6fc;
+    background-color: #8e1519;
+}
+
+.highlight .c,
+.highlight .ch,
+.highlight .cd,
+.highlight .cm,
+.highlight .cp,
+.highlight .cpf,
+.highlight .c1,
+.highlight .cs {
+    color: #8b949e;
+    font-style: normal !important;
+}
+
+.highlight .gl {
+    color: #8b949e;
+}
+
+.highlight .gt {
+    color: #8b949e;
+}
+
+.highlight .ni {
+    color: #c9d1d9;
+}
+
+.highlight .si {
+    color: #c9d1d9;
+}
+
+.highlight .ge {
+    color: #c9d1d9;
+    font-style: italic;
+}
+
+.highlight .gs {
+    color: #c9d1d9;
+    font-weight: bold;
+}
+
+.side-bar {
+    max-width: 250px;
+}
+
+// .site-header {
+//     background-color: #000000;
+// }
+
+.main-content {
+    line-height: 30px;
+    font-size: 17.5px
+}
+
+.nav-list-link {
+    color: #ffffff;
+}
+
+// .nav-list-link.active {
+//     background-color: #000000;
+// }
+
+
+// .nav-list-link:hover {
+//     background-color: #000000;
+//     font-weight: bold;
+// }
+
+
+.site-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+
+    /* 通常768px作为小屏幕设备的分界点 */
+    .side-bar {
+        max-width: 1000%;
+    }
+}
+
+.site-button {
+    font-size: medium;
+    color: #a2a2a2;
+}
+
+.theme-selector:active {
+    background-color: none;
+}

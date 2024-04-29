@@ -1,0 +1,47 @@
+<nav aria-label="Auxiliary" class="aux-nav">
+
+  <ul class="aux-nav-list">
+    <select id="theme-selector" class=" themeselect">
+      <option value="default">黑色主题</option>
+      <option value="dark">暗黑主题</option>
+      <option value="light">亮色主题</option>
+    </select>
+    </li>
+
+    <ul class="aux-nav-list">
+      {% for link in site.aux_links %}
+      <li class="aux-nav-list-item">
+        <a href="{{ link.last }}" target="_blank" class="site-button" {% if site.aux_links_new_tab %}
+          rel="noopener noreferrer" {% endif %}>
+          {{ link.first }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var themeSelector = document.getElementById('theme-selector');
+    var storedTheme = localStorage.getItem('theme') || 'default';
+    jtd.setTheme(storedTheme);
+    themeSelector.value = storedTheme;
+
+    themeSelector.addEventListener('change', function () {
+      var selectedTheme = themeSelector.value;
+      jtd.setTheme(selectedTheme);
+      localStorage.setItem('theme', selectedTheme);
+    });
+  });
+</script>
+
+<style>
+  .themeselect {
+    width: 80px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 0px;
+    appearance: none;
+    border: none;
+  }
+</style>
