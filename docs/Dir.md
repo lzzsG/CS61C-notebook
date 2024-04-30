@@ -1,16 +1,18 @@
 ---
 layout: page
-title: Part1 
-permalink: /part1/
-nav_order: 1
-has_children: true
+title: Directory
+permalink: /directory/
+nav_order: 0
+
 ---
 
 
 
 
 
-CS61C 中文目录
+## CS61C 中文目录
+
+---
 
 - P1 讲座1：介绍
 - P2 讲座2：数字表示
