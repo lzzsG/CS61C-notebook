@@ -1,0 +1,6 @@
+{% if include.language %}
+<div class="code-header">{{ include.language }}</div>
+{% endif %}
+{% highlight {{ include.language }} %}
+{{ include.code }}
+{% endhighlight %}
