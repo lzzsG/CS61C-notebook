@@ -47,7 +47,7 @@ int main() {
 
 - **0x00000000** 部分是不可写/不可读的，因此在访问 `NULL` 指针时会崩溃。这种保护机制帮助捕捉对无效指针的访问。
 
-![image-20240730092540737]({{ site.baseurl }}/docs/assets/image-20240730092540737.png)
+![image-20240730092540737](../docs/assets/image-20240730092540737.png)
 
 ## Where are variables allocated?
 
@@ -114,7 +114,7 @@ void d (int p) {
 
 在这个例子中，当`main()`调用`a()`时，栈上会分配一个新的栈帧用于`a()`。然后`a()`调用`b()`，分配新的栈帧用于`b()`。依次类推，直到调用`d()`。在`d()`执行完后，`d()`的栈帧被移除，返回到`c()`，再依次回到`b()`、`a()`和`main()`，实现后进先出。
 
-![image-20240730094149780]({{ site.baseurl }}/docs/assets/image-20240730094149780.png)
+![image-20240730094149780](../docs/assets/image-20240730094149780.png)
 
 ## Passing Pointers into the Stack
 
@@ -522,7 +522,7 @@ void free_mem_y() {
 
 ### 堆管理示例
 
-![image-20240730111140251]({{ site.baseurl }}/docs/assets/image-20240730111140251.png)
+![image-20240730111140251](../docs/assets/image-20240730111140251.png)
 
 请求 R1，100 字节  ->  请求 R2，10 字节  ->  释放 R1 的内存  ->  请求 R3，50 字节
 
