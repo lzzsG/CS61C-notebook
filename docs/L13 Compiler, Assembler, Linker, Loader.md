@@ -74,7 +74,7 @@ nav_order: 13
 
 伪指令为汇编语言程序员提供了简洁方便的表达方式，而汇编器会将这些伪指令转换为等效的机器指令。
 
-![image-20240802093108364](./assets/image-20240802093108364.png)
+![image-20240802093108364]({{ site.baseurl }}/docs/assets/image-20240802093108364.png)
 
 **CALL (Compiling, Assembling, Linking, and Loading)** 涉及程序从高级语言到机器语言的转换过程，以及进一步的硬件实现部分：
 
@@ -129,7 +129,7 @@ nav_order: 13
 
 总结：将C代码编译为二进制通常指的是步骤1-3，即将C程序转换为可执行文件。
 
-![image-20240802101722589](./assets/image-20240802101722589.png)
+![image-20240802101722589]({{ site.baseurl }}/docs/assets/image-20240802101722589.png)
 
 # Compiler
 
@@ -141,7 +141,7 @@ nav_order: 13
 - **输出**：汇编语言代码（例如，`foo.s`，适用于RISC-V）。
 - 注意：输出中**可能**包含伪指令（pseudoinstructions），例如，`mv`, `li`, `call`, `j`等。
 
-![image-20240802101821667](./assets/image-20240802101821667.png)
+![image-20240802101821667]({{ site.baseurl }}/docs/assets/image-20240802101821667.png)
 
 # Assembler
 
@@ -156,7 +156,7 @@ nav_order: 13
 
 汇编器读取和使用指令（directives），并用真实的汇编代码替换伪指令，然后生成机器语言代码。
 
-![image-20240802101924226](./assets/image-20240802101924226.png)
+![image-20240802101924226]({{ site.baseurl }}/docs/assets/image-20240802101924226.png)
 
 ## Directives
 
@@ -371,7 +371,7 @@ Exit: ...
   - 包含文本段和数据段，以及每个文件的信息表。
 - **输出**：可执行机器代码（例如，适用于RISC-V的a.out）
 
-![image-20240802102952406](./assets/image-20240802102952406.png)
+![image-20240802102952406]({{ site.baseurl }}/docs/assets/image-20240802102952406.png)
 
 ### 链接器的作用
 
@@ -387,7 +387,7 @@ Exit: ...
 
   - 遍历重定位表并处理每个条目，填写所有绝对地址。
 
-<img src="./assets/image-20240802103147530.png" alt="image-20240802103147530" style="zoom:150%;" />
+<img src="{{ site.baseurl }}/docs/assets/image-20240802103147530.png" alt="image-20240802103147530" style="zoom:150%;" />
 
 ## 哪些地址需要重定位？
 
@@ -506,7 +506,7 @@ Exit: ...
 - **输入**：可执行代码（例如，RISC-V的a.out）
 - **输出**：程序运行
 
-![image-20240802103807435](./assets/image-20240802103807435.png)
+![image-20240802103807435]({{ site.baseurl }}/docs/assets/image-20240802103807435.png)
 
 ## 加载器的工作原理
 
@@ -566,7 +566,7 @@ int main() {
 
 编译器将C代码转换为汇编代码。以下是生成的汇编代码示例：
 
-![image-20240802104059647](./assets/image-20240802104059647.png)
+![image-20240802104059647]({{ site.baseurl }}/docs/assets/image-20240802104059647.png)
 
 - `.text`：代码段
   - `.align 2`：将代码对齐到2^2字节边界。
@@ -595,7 +595,7 @@ int main() {
 
 汇编器将汇编代码转换为目标文件。以下是一些关键步骤：
 
-![image-20240802104148761](./assets/image-20240802104148761.png)
+![image-20240802104148761]({{ site.baseurl }}/docs/assets/image-20240802104148761.png)
 
 - **Text segment**：文本段
   - 汇编器输出显示了每条指令的机器码。例如：
@@ -677,7 +677,7 @@ a0500513 addi a0, a0, -1520
 
 ### 语言执行连续性
 
-![image-20240802104738912](./assets/image-20240802104738912.png)
+![image-20240802104738912]({{ site.baseurl }}/docs/assets/image-20240802104738912.png)
 
 解释器是一种直接执行其他程序的程序。
 

@@ -129,7 +129,7 @@ AND 门是一个基本的逻辑门，其输出只有在所有输入均为高电�
 
 - 符号：
 
-<img src="./assets/image-20240802145851813.png" alt="image-20240802145851813" style="zoom:25%;" />
+<img src="{{ site.baseurl }}/docs/assets/image-20240802145851813.png" alt="image-20240802145851813" style="zoom:25%;" />
 
 - 真值表：
 
@@ -146,7 +146,7 @@ OR 门是一个基本的逻辑门，其输出在至少一个输入为高电平�
 
 - 符号：
 
-<img src="./assets/image-20240802145919692.png" alt="image-20240802145919692" style="zoom:25%;" />
+<img src="{{ site.baseurl }}/docs/assets/image-20240802145919692.png" alt="image-20240802145919692" style="zoom:25%;" />
 
 - 真值表：
 
@@ -163,7 +163,7 @@ NOT 门是一个基本的逻辑门，其输出是输入的反相。输入为高�
 
 - 符号：
 
-<img src="./assets/image-20240802145935341.png" alt="image-20240802145935341" style="zoom:25%;" />
+<img src="{{ site.baseurl }}/docs/assets/image-20240802145935341.png" alt="image-20240802145935341" style="zoom:25%;" />
 
 - 真值表：
 
@@ -180,7 +180,7 @@ XOR 门是一个逻辑门，其输出在两个输入不同（即一个为高电�
 
 - 符号：
 
-<img src="./assets/image-20240802150346285.png" alt="image-20240802150346285" style="zoom:25%;" />
+<img src="{{ site.baseurl }}/docs/assets/image-20240802150346285.png" alt="image-20240802150346285" style="zoom:25%;" />
 
 - 真值表：
 
@@ -197,7 +197,7 @@ NAND 门是一个逻辑门，其输出是 AND 门输出的反相。只有在所�
 
 - 符号：
 
-<img src="./assets/image-20240802150404489.png" alt="image-20240802150404489" style="zoom:25%;" />
+<img src="{{ site.baseurl }}/docs/assets/image-20240802150404489.png" alt="image-20240802150404489" style="zoom:25%;" />
 
 - 真值表：
 
@@ -214,7 +214,7 @@ NOR 门是一个逻辑门，其输出是 OR 门输出的反相。只有在所有
 
 - 符号：
 
-<img src="./assets/image-20240802150420172.png" alt="image-20240802150420172" style="zoom:25%;" />
+<img src="{{ site.baseurl }}/docs/assets/image-20240802150420172.png" alt="image-20240802150420172" style="zoom:25%;" />
 
 - 真值表：
 
@@ -259,7 +259,7 @@ NOR 门是一个逻辑门，其输出是 OR 门输出的反相。只有在所有
 
 下图展示了三输入多数电路的真值表及其对应的逻辑电路。
 
-![image-20240802151202359](./assets/image-20240802151202359.png)
+![image-20240802151202359]({{ site.baseurl }}/docs/assets/image-20240802151202359.png)
 
 ## Truth Table -> Gates (e.g., FSM circuit)
 
@@ -270,7 +270,7 @@ NOR 门是一个逻辑门，其输出是 OR 门输出的反相。只有在所有
 
 下图展示了一个简单的FSM电路的真值表及其对应的逻辑电路：
 
-![image-20240802151339786](./assets/image-20240802151339786.png)
+![image-20240802151339786]({{ site.baseurl }}/docs/assets/image-20240802151339786.png)
 
 这里，PS表示当前状态，NS表示下一个状态，Input表示输入信号，Output表示输出信号。逻辑电路可以用与门和或门实现。
 
@@ -297,7 +297,7 @@ NOR 门是一个逻辑门，其输出是 OR 门输出的反相。只有在所有
 
 这个表达式表示当三个输入中有两个或两个以上为真（1）时，输出为真（1）。
 
-![image-20240802151658698](./assets/image-20240802151658698.png)
+![image-20240802151658698]({{ site.baseurl }}/docs/assets/image-20240802151658698.png)
 
 ## Boolean Algebra (e.g., for FSM)
 
@@ -343,7 +343,7 @@ NOR 门是一个逻辑门，其输出是 OR 门输出的反相。只有在所有
 简化后的表达式为：
 \\[ y = a + c \\]
 
-![image-20240802151912234](./assets/image-20240802151912234.png)
+![image-20240802151912234]({{ site.baseurl }}/docs/assets/image-20240802151912234.png)
 
 原始电路通过化简可以变为更简单的电路，只需要一个或门即可实现上述功能。
 
@@ -423,7 +423,7 @@ NOR 门是一个逻辑门，其输出是 OR 门输出的反相。只有在所有
 
 在图中，我们看到一个示例，该示例展示了如何将一个布尔表达式转换为SOP形式。这个例子的真值表如下：
 
-![image-20240802152835541](./assets/image-20240802152835541.png)
+![image-20240802152835541]({{ site.baseurl }}/docs/assets/image-20240802152835541.png)
 
 我们可以看到，对于输出 y 为 1 的每一行，我们可以写出相应的最小项(minterm)。这些最小项可以用与 (AND) 操作组合起来，然后用或 (OR) 操作相连：
 
@@ -458,7 +458,7 @@ NOR 门是一个逻辑门，其输出是 OR 门输出的反相。只有在所有
 
 电路图如下：
 
-![image-20240802153752111](./assets/image-20240802153752111.png)
+![image-20240802153752111]({{ site.baseurl }}/docs/assets/image-20240802153752111.png)
 
 1. **计算 \\(\overline{a} \cdot \overline{b}\\)**：
    - 使用两个 NOT 门将 \\(a\\) 和 \\(b\\) 分别反相。

@@ -25,7 +25,7 @@ nav_order: 11
 
 每一层都为下一层提供了更高层次的抽象，简化了设计和编程的复杂度。
 
-![image-20240801114118927](./assets/image-20240801114118927.png)
+![image-20240801114118927]({{ site.baseurl }}/docs/assets/image-20240801114118927.png)
 
 ### 快速计算机科学历史：ENIAC（宾夕法尼亚大学，1946年）
 
@@ -100,7 +100,7 @@ opname rd, rs1, rs2
 
 指令被分为多个字段，每个字段在指令字中的位置和大小如下图所示：
 
-![image-20240801115609252](./assets/image-20240801115609252.png)
+![image-20240801115609252]({{ site.baseurl }}/docs/assets/image-20240801115609252.png)
 
 **字段的作用**
 
@@ -111,7 +111,7 @@ opname rd, rs1, rs2
 - **rs2**：源寄存器2字段，包含第二个操作数（5位无符号整数）。
 - **funct7**：与funct3和opcode组合描述要执行的操作。
 
-![image-20240801115729275](./assets/image-20240801115729275.png)
+![image-20240801115729275]({{ site.baseurl }}/docs/assets/image-20240801115729275.png)
 
 ### 为什么不直接使用一个17位字段来表示操作？
 
@@ -148,13 +148,13 @@ add x18, x19, x10
 
 每个字段在指令字中的位置和大小如下图所示：
 
-![image-20240801115805097](./assets/image-20240801115805097.png)
+![image-20240801115805097]({{ site.baseurl }}/docs/assets/image-20240801115805097.png)
 
 ### RV32 R格式指令
 
 以下是RV32 R格式指令的 `funct7` 和 `funct3` 字段编码：
 
-![image-20240801115830297](./assets/image-20240801115830297.png)
+![image-20240801115830297]({{ site.baseurl }}/docs/assets/image-20240801115830297.png)
 
 ### 如何编码
 
@@ -179,7 +179,7 @@ add x4, x3, x2
 0000000 00010 00011 000 00100 0110011
 ```
 
-![image-20240801120213407](./assets/image-20240801120213407.png)
+![image-20240801120213407]({{ site.baseurl }}/docs/assets/image-20240801120213407.png)
 
 转换为十六进制编码为：
 
@@ -212,7 +212,7 @@ funct7  rs2   rs1   funct3  rd    opcode
 
 为了处理立即数，RISC-V引入了I格式。I格式保留了与R格式的大部分一致性，简化了CPU处理指令的方式。I格式指令布局如下：
 
-![image-20240801120419736](./assets/image-20240801120419736.png)
+![image-20240801120419736]({{ site.baseurl }}/docs/assets/image-20240801120419736.png)
 
 `imm[11:0]` 是12位宽的立即数，可以表示从 -2048 到 2047 的数值。CPU在使用前会将其符号扩展到32位。
 
@@ -238,11 +238,11 @@ addi x15, x1, -50
 - **rd**：01111 (x15)
 - **opcode**：0010011
 
-![image-20240801120450473](./assets/image-20240801120450473.png)
+![image-20240801120450473]({{ site.baseurl }}/docs/assets/image-20240801120450473.png)
 
 ### RV32 I格式算术指令
 
-![image-20240801120525644](./assets/image-20240801120525644.png)
+![image-20240801120525644]({{ site.baseurl }}/docs/assets/image-20240801120525644.png)
 
 **总结**
 
@@ -281,9 +281,9 @@ imm[11:0]  rs1  funct3  rd    opcode
 - **rd**：01110（x14）
 - **opcode**：0000011
 
-![image-20240801120645446](./assets/image-20240801120645446.png)
+![image-20240801120645446]({{ site.baseurl }}/docs/assets/image-20240801120645446.png)
 
-![image-20240801120702311](./assets/image-20240801120702311.png)
+![image-20240801120702311]({{ site.baseurl }}/docs/assets/image-20240801120702311.png)
 
 ### 所有五种RV32加载指令
 
@@ -295,7 +295,7 @@ RISC-V定义了五种加载指令，每种指令的功能和编码如下：
 - **lbu**（加载无符号字节）：funct3=100，opcode=0000011
 - **lhu**（加载无符号半字）：funct3=101，opcode=0000011
 
-![image-20240801120733288](./assets/image-20240801120733288.png)
+![image-20240801120733288]({{ site.baseurl }}/docs/assets/image-20240801120733288.png)
 
 ### 加载操作的符号扩展和零扩展
 
@@ -360,7 +360,7 @@ Store address = (Base Register) + (Immediate Offset)
 
 这条指令表示将寄存器x5中的数据存储到计算出的内存地址中。
 
-![image-20240801120952302](./assets/image-20240801120952302.png)
+![image-20240801120952302]({{ site.baseurl }}/docs/assets/image-20240801120952302.png)
 
 ### S格式简化硬件设计
 
@@ -390,7 +390,7 @@ imm[11:5] rs2   rs1   funct3 imm[4:0] opcode
 - **imm[4:0]**：00100（低5位）
 - **opcode**：0100011（表示存储指令）
 
-![image-20240801121147494](./assets/image-20240801121147494.png)
+![image-20240801121147494]({{ site.baseurl }}/docs/assets/image-20240801121147494.png)
 
 ### 所有三种RV32存储指令
 
@@ -402,7 +402,7 @@ RISC-V定义了三种存储指令，分别用于不同的数据宽度：
 
 这些指令通过立即数和两个寄存器操作数来指定存储操作的位置和数据内容。
 
-![image-20240801121821873](./assets/image-20240801121821873.png)
+![image-20240801121821873]({{ site.baseurl }}/docs/assets/image-20240801121821873.png)
 
 ## 结论
 
@@ -414,6 +414,6 @@ RISC-V简化了指令格式，使所有指令的大小与数据字相同（32位
 - **R格式**：用于寄存器到寄存器的算术操作
 - **S格式**：用于存储指令
 
-![image-20240801121852778](./assets/image-20240801121852778.png)
+![image-20240801121852778]({{ site.baseurl }}/docs/assets/image-20240801121852778.png)
 
 未来还将介绍B格式、U格式和J格式指令格式，这些格式进一步扩展了RISC-V指令集的功能和应用场景。

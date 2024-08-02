@@ -483,7 +483,7 @@ Leaf:
 
 - 需要保存 `s0` 和 `s1` 的旧值。
 
-![image-20240801104036868](./assets/image-20240801104036868.png)
+![image-20240801104036868]({{ site.baseurl }}/docs/assets/image-20240801104036868.png)
 
 
 
