@@ -1,4 +1,4 @@
-## Lzzs CS 61C notebook
+## Lzzs CS 61C notebook 
 
 ## UC Berkeley CS 61C: Great Ideas in Computer Architecture (Machine Structures) Fall 2022
 
