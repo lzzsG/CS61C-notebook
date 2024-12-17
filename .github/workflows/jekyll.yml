@@ -44,6 +44,10 @@ jobs:
         env:
           JEKYLL_ENV: production  # Set environment to production
 
+      # Add CNAME file to the build output directory
+      - name: Add CNAME file
+        run: echo "docs.lzzs.fun" > ./_site/CNAME
+
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
 
