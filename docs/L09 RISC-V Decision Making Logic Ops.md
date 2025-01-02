@@ -3,7 +3,7 @@ layout: page
 title: L09 RISC-V Decision Making Logic Ops
 permalink: /L09
 nav_order: 9
-
+description: "RISC-V Decision Making Logic Ops"
 
 
 ---
@@ -12,9 +12,9 @@ nav_order: 9
 
 # Decision Making
 
-## RV32 So Far...
+## RV32 So Far
 
-### RV32 迄今为止...
+### RV32 迄今为止
 
 - **加法/减法**
   - `add rd, rs1, rs2`  
@@ -47,6 +47,7 @@ nav_order: 9
   
 - **在编程语言中：`if` 语句**  
   在大多数编程语言中，`if` 语句用于根据条件执行特定的代码块。它的基本语法是：  
+
   ```c
   if (condition) {
       // Code to execute if condition is true
@@ -148,8 +149,6 @@ else
 
 ![image-20240731155211095]({{ site.baseurl }}/docs/assets/image-20240731155211095.png)
 
-
-
 ## Magnitude Compares in RISC-V
 
 ### RISC-V 中的大小比较
@@ -160,6 +159,7 @@ else
   - **语法**：`blt reg1, reg2, Label`
   - **含义**：如果 `reg1 < reg2`，则跳转到 `Label`
   - **示例**：
+
     ```
     blt x5, x6, TargetLabel  // 如果 x5 小于 x6，则跳转到 TargetLabel
     ```
@@ -168,6 +168,7 @@ else
   - **语法**：`bltu reg1, reg2, Label`
   - **含义**：如果 `reg1 < reg2`（无符号比较），则跳转到 `Label`
   - **示例**：
+
     ```
     bltu x5, x6, TargetLabel  // 如果 x5 小于 x6（无符号比较），则跳转到 TargetLabel
     ```
@@ -178,6 +179,7 @@ else
   - **语法**：`bge reg1, reg2, Label`
   - **含义**：如果 `reg1 >= reg2`，则跳转到 `Label`
   - **示例**：
+
     ```
     bge x5, x6, TargetLabel  // 如果 x5 大于或等于 x6，则跳转到 TargetLabel
     ```
@@ -186,6 +188,7 @@ else
   - **语法**：`bgeu reg1, reg2, Label`
   - **含义**：如果 `reg1 >= reg2`（无符号比较），则跳转到 `Label`
   - **示例**：
+
     ```
     bgeu x5, x6, TargetLabel  // 如果 x5 大于或等于 x6（无符号比较），则跳转到 TargetLabel
     ```
@@ -310,8 +313,6 @@ Done:
 | 按位异或 (XOR) | ^        | ^           | xor         |
 | 逻辑左移       | <<       | <<          | sll         |
 | 逻辑右移       | >>       | >>          | srl         |
-
-
 
 ## RISC-V Logical Instructions
 

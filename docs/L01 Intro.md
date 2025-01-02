@@ -3,6 +3,7 @@ layout: page
 title: L01 Intro
 permalink: /ch1
 nav_order: 1
+description: "CS 61C L01 Intro. Dan Garcia教授介绍了课程的主题——“计算机体系结构中的伟大思想”（Great Ideas in Computer Architecture），又称“机器结构”（Machine Structures）。他强调，尽管课程编号（CS 61C）可能让人误以为这是一门关于C语言的课程，实际上它更侧重于硬件与软件的交互接口，以及数据中心的运作方式。他说明了为什么选择C语言作为教学语言——因为它更接近硬件层面，有助于学生了解和操作硅基硬件。"
 ---
 
 

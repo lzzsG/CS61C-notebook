@@ -3,7 +3,7 @@ layout: page
 title: L15 Combinational Logic
 permalink: /L15
 nav_order: 15
-
+description: "Combinational Logic"
 
 
 ---
@@ -119,7 +119,7 @@ nav_order: 15
 
 ---
 
-# Logic Gates 
+# Logic Gates
 
 ## 基本逻辑门
 
@@ -415,7 +415,7 @@ NOR 门是一个逻辑门，其输出是 OR 门输出的反相。只有在所有
 
 ---
 
-# Canonical forms 
+# Canonical forms
 
 ### 规范形式
 
@@ -507,7 +507,7 @@ NOR 门是一个逻辑门，其输出是 OR 门输出的反相。只有在所有
 
    这句话是正确的。NOR门可以通过适当的连接实现任何逻辑函数，包括 AND, OR 和 NOT。
 
-## And in conclusion...
+## And in conclusion
 
 1. 通过流水线设计可以降低组合逻辑电路的延迟，从而提高时钟速度。
 2. 有限状态机（FSM）非常有用，你将在更高级的课程如151A, 152, 和164中再次见到它们。

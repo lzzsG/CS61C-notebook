@@ -33,4 +33,6 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem 'rouge', git: 'https://github.com/mchanphilly/rouge.git', branch: 'feature.bluespec-lexer'
 gem "just-the-docs"
+gem 'jekyll-sitemap'
+gem 'jekyll-seo-tag'
 

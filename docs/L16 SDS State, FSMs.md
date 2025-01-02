@@ -3,7 +3,7 @@ layout: page
 title: L16 SDS State, FSMs
 permalink: /L16
 nav_order: 16
-
+description: "Lecture 16: SDS State, FSMs 在同步数字系统中，状态元素（State Elements）是用于存储信息的关键组件。它们与时钟信号协调工作，以确保数据的有序流动和处理。"
 
 
 
@@ -95,7 +95,7 @@ for (i = 0; i < n; i++) {
 
 ## First try…Does this work?
 
-### Nope!
+### Nope
 
 - **原因1**：如何控制for循环的下一次迭代？
 - **原因2**：如何表示`S=0`？
@@ -106,7 +106,7 @@ for (i = 0; i < n; i++) {
 
 ## Second try…How about this?
 
-### 解决方案：
+### 解决方案
 
 使用寄存器来延缓数据传输到加法器的过程。
 
@@ -115,7 +115,7 @@ for (i = 0; i < n; i++) {
 
 ![image-20240803095358452]({{ site.baseurl }}/docs/assets/image-20240803095358452.png)
 
-### 粗略时序图：
+### 粗略时序图
 
 - 显示了时钟信号（LOAD/CLK）、累加结果（S）以及输入值（X）的关系。
 - 通过时钟信号的控制，每个输入值`X_i`按顺序在每个时钟周期传递并累加，最终在输出`S`上得到总和。
@@ -285,8 +285,6 @@ for (i = 0; i < n; i++) {
 
 ---
 
-
-
 # Finite State Machines (FSM) Introduction
 
 ### 有限状态机（FSM）简介
@@ -299,7 +297,7 @@ for (i = 0; i < n; i++) {
 
 - **硬件实现**：通过组合逻辑和寄存器，任何 FSM 都可以在硬件中实现。组合逻辑用于计算状态转换和输出逻辑，而寄存器用于存储当前状态。通过时钟信号控制，FSM 可以在每个时钟周期更新状态，实现预定的状态转换和输出。
 
-## Finite State Machine Example: 3 ones...
+## Finite State Machine Example: 3 ones
 
 ### 有限状态机示例：检测连续的3个1
 
@@ -395,9 +393,9 @@ for (i = 0; i < n; i++) {
 >
 > 开关网络 (Switching Networks)
 
-## And In Conclusion...
+## And In Conclusion
 
-### 总结...
+### 总结
 
 - **状态元素的作用**：
   - 构建内存。
@@ -412,6 +410,3 @@ for (i = 0; i < n; i++) {
 - **有限状态机（FSM）极其有用**：FSM用于实现复杂的控制逻辑，将在更高级的课程（如151A、152、164、172等）中再次看到。
 
 通过这些概念和技术，可以设计和实现高效的同步数字系统，确保系统在每个时钟周期内正确地执行其功能。
-
-
-

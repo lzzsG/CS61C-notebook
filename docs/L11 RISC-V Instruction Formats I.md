@@ -3,7 +3,7 @@ layout: page
 title: L11 RISC-V Instruction Formats I
 permalink: /L11
 nav_order: 11
-
+description: "RISC-V指令集格式 在计算机系统中，不同的抽象层次允许我们从不同的角度理解和操作计算机。这些抽象层次从高级语言到底层硬件，分别提供了简化设计和编程复杂度的方式"
 
 
 ---
@@ -118,8 +118,6 @@ opname rd, rs1, rs2
 虽然使用一个17位的字段来简化可能是一个选择，但分开这些字段的设计可以让指令格式更加灵活和可扩展。例如，可以通过组合不同的funct7和funct3值来增加指令的种类，而不需要改变整体的指令长度或格式。这种设计理念使得RISC-V指令集能够保持简洁和高效，同时提供足够的灵活性以适应未来的扩展和改进。
 
 RISC-V 的这种设计，使其在简化硬件实现的同时，也能够保持指令集的灵活性和扩展性，适应未来的发展需求。
-
-
 
 ## R格式示例
 
@@ -339,6 +337,7 @@ storeop rs2, imm(rs1)
 - **Immediate "offset" (imm)**: 立即数偏移量，用于计算存储地址
 
 存储地址的计算公式：
+
 ```plaintext
 Store address = (Base Register) + (Immediate Offset)
 ```
@@ -354,6 +353,7 @@ Store address = (Base Register) + (Immediate Offset)
 - **8** 是立即数偏移量。
 
 存储地址的计算如下：
+
 ```plaintext
 存储地址 = x6 + 8
 ```

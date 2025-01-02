@@ -19,20 +19,20 @@
 # in the templates via {{ site.myvariable }}.
 
 title: "Lzzs CS61C Notebook"
-email: lizizhi122@gmail.com
+email: lzzs122@foxmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  CS 61C 是加州大学伯克利分校（UC Berkeley）提供的一门课程，全称为“Great Ideas in Computer Architecture”（计算机体系结构中的伟大思想），通常也被称为“Machine Structures”（机器结构）。这门课程主要关注于计算机硬件和软件的接口，强调理解计算机是如何工作的，尤其是从底层硅芯片到高层编程语言的整个流程。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://lzzs.fun" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  LzzsG
+lang: zh-CN
 
 # Build settings
 theme: just-the-docs
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -94,10 +94,10 @@ search:
 aux_links:
   "Home":
     - "//lzzs.fun"
-  "Blog":
-  - "//lzzs.fun/blog"
+  "Notes":
+    - "//lzzs.fun/notebooks"
   "GitHub":
-  - "//github.com/lzzsG/CS61C-notebook"
+    - "//github.com/lzzsG/HDLbits-Verilog-Notebook"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
